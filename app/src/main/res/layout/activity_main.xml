@@ -12,6 +12,7 @@
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:text="Add Widget"
+        style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
         android:textColor="@color/white"
         android:layout_centerInParent="true"
         android:textSize="15dp"/>

@@ -72,7 +72,7 @@ public class WidgetService extends Service {
 
         windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         imageClose = new ImageView(this);
-        imageClose.setImageResource(R.drawable.ic_launcher_background);
+        imageClose.setImageResource(R.drawable.delete);
         imageClose.setVisibility(View.INVISIBLE);
         windowManager.addView(imageClose, imageParams);
         windowManager.addView(mFloatingView, layoutParams);
@@ -145,9 +145,9 @@ public class WidgetService extends Service {
                         windowManager.updateViewLayout(mFloatingView, layoutParams);
 
                         if (layoutParams.y>(height*0.6)){
-                            imageClose.setImageResource(R.drawable.ic_launcher_background);
+                            imageClose.setImageResource(R.drawable.delete);
                         } else {
-                            imageClose.setImageResource(R.drawable.ic_launcher_background);
+                            imageClose.setImageResource(R.drawable.delete);
                         }
                         return true;
                 }
